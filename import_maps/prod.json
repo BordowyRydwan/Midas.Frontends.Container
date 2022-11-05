@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "@midas/root-config": "//localhost:4000/midas-root-config.js",
+    "@midas/test": "//localhost:4001/main.js"
+  }
+}

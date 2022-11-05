@@ -1,6 +1,8 @@
 const { merge } = require("webpack-merge");
 const singleSpaDefaults = require("webpack-config-single-spa-ts");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+const Path = require("path");
 
 module.exports = (webpackConfigEnv, argv) => {
   const orgName = "midas";
@@ -22,6 +24,11 @@ module.exports = (webpackConfigEnv, argv) => {
           isLocal: webpackConfigEnv && webpackConfigEnv.isLocal,
           orgName,
         },
+      }),
+      new CopyWebpackPlugin({
+        patterns: [
+          { from: Path.resolve("./import_maps"), to: "./import_maps" },
+        ],
       }),
     ],
   });
