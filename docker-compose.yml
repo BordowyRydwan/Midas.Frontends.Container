@@ -1,8 +1,8 @@
-version: '3.3'
+version: "3.3"
 
 services:
   root-container:
     container_name: root-container
     build: .
     ports:
-      - '4000:80'
+      - "4000:80"
