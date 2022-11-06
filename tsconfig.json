@@ -4,6 +4,6 @@
   "compilerOptions": {
     "declarationDir": "dist"
   },
-  "include": ["src/**/*", "import_maps/**/*"],
+  "include": ["src/**/*", "import_maps/**/*", "public/**/*", ],
   "exclude": ["src/**/*.test*"]
 }
