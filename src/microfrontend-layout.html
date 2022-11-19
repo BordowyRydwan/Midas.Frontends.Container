@@ -2,5 +2,18 @@
   <nav>
     <application name="@midas/navigation"></application>
   </nav>
-  <main>&nbsp;</main>
+  <main>
+    <route default>
+      <div class="welcome">
+        Zaloguj się, aby uzyskać dostęp do konta
+      </div>
+    </route>
+    <route path="/auth">
+      <application name="@midas/auth"></application>
+    </route>
+    <route path="/users">
+      <application name="@midas/users"></application>
+    </route>
+  </main>
+
 </single-spa-router>

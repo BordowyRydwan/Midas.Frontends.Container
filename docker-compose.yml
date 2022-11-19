@@ -1,4 +1,4 @@
-version: "3.3"
+version: "3.5"
 
 services:
   root-container:
@@ -6,3 +6,8 @@ services:
     build: .
     ports:
       - "4000:80"
+
+networks:
+  default:
+    name: midas
+    external: true
