@@ -3,6 +3,7 @@
     "@midas/root-config": "//localhost:4000/midas-root-config.js",
     "@midas/auth": "//localhost:4002/main.js",
     "@midas/users": "//localhost:4004/main.js",
-    "@midas/navigation": "//localhost:4006/main.js"
+    "@midas/navigation": "//localhost:4006/main.js",
+    "@midas/family": "//localhost:4005/main.js"
   }
 }
