@@ -3,8 +3,11 @@
     <application name="@midas/navigation"></application>
   </nav>
   <main>
-    <route default>
-      <div class="welcome">Zaloguj się, aby uzyskać dostęp do konta</div>
+    <route path="/transactions">
+      <application name="@midas/transactions"></application>
+    </route>
+    <route path="/files">
+      <application name="@midas/files"></application>
     </route>
     <route path="/auth">
       <application name="@midas/auth"></application>
@@ -16,4 +19,9 @@
       <application name="@midas/family"></application>
     </route>
   </main>
+  <footer>
+    <route path="/transactions">
+      <application name="@midas/files"></application>
+    </route>
+  </footer>
 </single-spa-router>
